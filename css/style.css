@@ -115,7 +115,7 @@ a:hover {
 
 /*HERO*/
 #hero {
-    background: linear-gradient(rgba(0,0,0,0.507), #000), url(/img/banner-3.jpg);
+    background: linear-gradient(rgba(0,0,0,0.507), #000), url(../img/bannerofi.jpg);
     background-position: center;
     background-size: cover;
 }
