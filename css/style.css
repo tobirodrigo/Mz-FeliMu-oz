@@ -634,6 +634,40 @@ button.btn-close:hover {
         margin-top: 50px;
     }
 
+    .vcon .infoBox div span {
+        min-width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+    .vcon {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+    }
+    .vcon h3 {
+        text-align: center; /* Centrar el título en pantallas pequeñas */
+        font-size: 3rem;
+    }
+    .infoBox > div {
+        display: flex;
+        flex-direction: column; /* Coloca los íconos arriba de los enlaces */
+        align-items: center; /* Centra los íconos y enlaces horizontalmente */
+        margin-bottom: 20px; /* Espacio entre cada sección de contacto */
+    }
+    .infoBox > div > span {
+        margin-bottom: 10px; /* Espacio entre el ícono y el enlace */
+    }
+    .infoBox > div > a {
+        text-align: center; /* Centra el texto del enlace */
+        font-size: 2rem;
+    }
+
+    .vcon .infoBox div p,
+    .vcon .infoBox div a {
+        font-size: 2em;
+    }
+
+
     /* Formularios */
     .form-control {
         margin-bottom: 10px;
@@ -686,9 +720,38 @@ button.btn-close:hover {
         font-size: 1.2em;
     }
 
+    .vcon {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+    }
+    .vcon h3 {
+        text-align: center; /* Centrar el título en pantallas pequeñas */
+        font-size: 3rem;
+    }
+    .infoBox > div {
+        display: flex;
+        flex-direction: column; /* Coloca los íconos arriba de los enlaces */
+        align-items: center; /* Centra los íconos y enlaces horizontalmente */
+        margin-bottom: 20px; /* Espacio entre cada sección de contacto */
+    }
+    .infoBox > div > span {
+        margin-bottom: 10px; /* Espacio entre el ícono y el enlace */
+    }
+    .infoBox > div > a {
+        text-align: center; /* Centra el texto del enlace */
+        font-size: 2rem;
+    }
+
+
+    .vcon .infoBox div span {
+        min-width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
     .vcon .infoBox div p,
     .vcon .infoBox div a {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .section-title .line {
