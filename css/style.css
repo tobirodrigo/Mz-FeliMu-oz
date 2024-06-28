@@ -294,6 +294,63 @@ a:hover {
     color: #fff;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.slider-box {
+    width: 900px;
+    height: 600px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #fff;
+}
+
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 .custom-carousel-container {
     display: flex;
     justify-content: center;
@@ -338,6 +395,7 @@ main#main {
 }
 
 .container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -367,7 +425,6 @@ input.form-control, select.form-control {
 
 /* Estilos para las checkbox */
 input[type="checkbox"] {
-    appearance: none;
     width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -386,7 +443,6 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -517,6 +573,13 @@ button.btn-close:hover {
 }
 
 /* RESPONSIVE DESIGN */
+@media (max-width:991px) {
+    .slider-box {
+        width: 100%;
+        height: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     .logo-mz {
         align-items: center;
@@ -556,6 +619,9 @@ button.btn-close:hover {
 
     .sci li a {
         font-size: 1.5em;
+    }
+    .container {
+        margin-top: none;
     }
 }
 
@@ -634,40 +700,6 @@ button.btn-close:hover {
         margin-top: 50px;
     }
 
-    .vcon .infoBox div span {
-        min-width: 30px;
-        height: 30px;
-        font-size: 1.2em;
-    }
-
-    .vcon {
-        width: 100%; /* Ocupa todo el ancho de la pantalla */
-        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
-    }
-    .vcon h3 {
-        text-align: center; /* Centrar el título en pantallas pequeñas */
-        font-size: 3rem;
-    }
-    .infoBox > div {
-        display: flex;
-        flex-direction: column; /* Coloca los íconos arriba de los enlaces */
-        align-items: center; /* Centra los íconos y enlaces horizontalmente */
-        margin-bottom: 20px; /* Espacio entre cada sección de contacto */
-    }
-    .infoBox > div > span {
-        margin-bottom: 10px; /* Espacio entre el ícono y el enlace */
-    }
-    .infoBox > div > a {
-        text-align: center; /* Centra el texto del enlace */
-        font-size: 2rem;
-    }
-
-    .vcon .infoBox div p,
-    .vcon .infoBox div a {
-        font-size: 2em;
-    }
-
-
     /* Formularios */
     .form-control {
         margin-bottom: 10px;
@@ -742,16 +774,9 @@ button.btn-close:hover {
         font-size: 2rem;
     }
 
-
-    .vcon .infoBox div span {
-        min-width: 30px;
-        height: 30px;
-        font-size: 1.2em;
-    }
-
     .vcon .infoBox div p,
     .vcon .infoBox div a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .section-title .line {
