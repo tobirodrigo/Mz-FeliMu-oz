@@ -327,7 +327,7 @@ a:hover {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -365,6 +365,10 @@ a:hover {
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+.rec {
+    margin-top: 100px;
 }
 
 .custom-carousel-container {
@@ -411,7 +415,6 @@ main#main {
 }
 
 .container {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -639,6 +642,9 @@ button.btn-close:hover {
     .container {
         margin-top: none;
     }
+    .rec {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -675,6 +681,10 @@ button.btn-close:hover {
         width: 40px;
         height: 3px;
     }
+    .rec {
+        margin-top: 2rem;
+    }
+    
 }
 
 /*KIT*/
@@ -740,6 +750,9 @@ button.btn-close:hover {
     /* Botón WhatsApp */
     #btn-whatsapp {
         width: 100%;
+    }
+    .rec {
+        margin-top: 2rem;
     }
 }
 
@@ -799,6 +812,9 @@ button.btn-close:hover {
         width: 40px;
         height: 3px;
     }
+    .rec {
+        margin-top: 2rem;
+    }
 }
 
 /*KIT*/
@@ -864,5 +880,8 @@ button.btn-close:hover {
     /* Botón WhatsApp */
     #btn-whatsapp {
         width: 100%;
+    }
+    .rec {
+        margin-top: 2rem;
     }
 }
