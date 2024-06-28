@@ -239,6 +239,19 @@ a:hover {
     background-position: left;
 }
 
+.highlight {
+    font-size: 1.16rem; 
+    font-weight: bold;
+}
+
+.siza {
+    color: #000;
+}
+
+.siza:hover {
+    color: #fff;
+}
+
  .vcon h3 {
     color: var(--c-brand-light);
 }
