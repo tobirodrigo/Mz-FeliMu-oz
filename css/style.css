@@ -246,10 +246,13 @@ a:hover {
 
 .siza {
     color: #000;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .siza:hover {
     color: #fff;
+    font-weight: 500;
 }
 
  .vcon h3 {
