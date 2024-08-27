@@ -8,58 +8,122 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="icon" href="img/iconMZ.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/clash-display.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/iconMZ.png" class="logo-mz" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">¿Quienes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-                <a href="calculakit.html" class="btn btn-brand ms-lg-3">Arma tu kit</a>
-            </div>
-        </div>
-    </nav>
 
-    <!--BANNER-->
-    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-uppercase text-white fw-semibold display-1">MZ SERVICE</h1>
-                    <h5 class="text-white mt-3 mb-4">BRINDANDO SOLUCIONES PARA EL HOGAR!</h5>
-                    <div>
-                        <a href="calculakit.html" class="btn btn-brand me-2">Arma tu Kit de reparacion</a>
-                        <a href="#about" class="btn btn-light ms-2">Sobre nosotros</a>
-                    </div>
-                </div>
-            </div>
+
+    <!-- HEADER-->
+    <header>
+        <a href="#" class="logo"><i class="bx bxs-home"></i>Mz Service</a>
+        <ul class="navlist">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Info</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#serv">Servicios</a></li>
+            <li><a href="calculakit.html">Arma tu kit</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="https://www.instagram.com/mzservice_/?utm_source=ig_embed&ig_rid=7e7c4ac7-7885-4a96-a938-00c0de2ce3df" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61559469660065&locale=es_LA" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://wa.link/0wsz0d" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Mz<span>Service.</span><br>Brindando soluciones para tu hogar</h1>
+            <a href="calculakit.html" class="btn">Arma tu kit <i class="bx bxs-right-arrow"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="img/banner.png" alt="Imagen principal de Mz Service">
         </div>
     </section>
 
-    <!--INFO-->
+    <!-- Servicios -->
+    <div class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <i class="ri-user-2-line user-icon"></i>
+                    <h2 class="user-name">TECNICOS</h2>
+                    <p class="user-proffesion">CONTAMOS CON TÉCNICOS MATRICULADOS</p>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-tools-line user-icon"></i>
+                    <h2 class="user-name">MARCAS</h2>
+                    <p class="user-proffesion">SERVICIO OFICIAL MULTIMARCA</p>
+                    <button class="message-button">Ver Marcas</button> 
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-fridge-line user-icon"></i>
+                    <h2 class="user-name" style="text-align: center;">REPARACIÓN DE PLAQUETAS</h2>
+                    <p class="user-proffesion">ACONDICIONAMIENTO Y REPARACIÓN DE PLACAS DE ELECTRODOMÉSTICOS</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-temp-cold-line user-icon"></i>
+                    <h2 class="user-name"  style="text-align: center;">CÁMARAS FRIGORÍFICAS</h2>
+                    <p class="user-proffesion">PLANEAMIENTO DE PROYECTOS DESDE CERO, MANTENIMIENTO Y REPARACIÓN</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-t-shirt-air-line user-icon"></i>
+                    <h2 class="user-name"  style="text-align: center;">LAVARROPAS</h2>
+                    <p class="user-proffesion">SERVICIO DE <br> REPARACIÓN Y <br> MANTENIMIENTO</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-ram-line user-icon"></i>
+                    <h2 class="user-name">HELADERAS</h2>
+                    <p class="user-proffesion">MANTENIMIENTO Y SERVICE DE HELADERAS COMERCIALES Y FAMILIARES</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-windy-fill user-icon"></i>
+                    <h2 class="user-name" style="text-align: center;">AIRES ACONDICIONADOS</h2>
+                    <p class="user-proffesion">INSTALACIÓN, MANTENIMIENTO Y SERVICE</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-sensor-fill user-icon"></i>
+                    <h2 class="user-name">BOBINADO DE MOTORES</h2>
+                    <p class="user-proffesion">RECAMBIOS DE DISTINTAS BOBINAS Y REFACCIONES DE LAS MISMAS</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <i class="ri-user-2-line user-icon"></i>
+                    <h2 class="user-name">SECARROPAS</h2>
+                    <p class="user-proffesion">SERVICIO DE REPARACIÓN Y MANTENIMIENTO</p>
+                    <button class="message-button">Ver Repuestos</button>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Sobre Nostros -->
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
@@ -67,17 +131,17 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">SOBRE NOSOTROS</h1>
                         <div class="line"></div>
-                            <p>Somos un negocio Especialistas en Refrigeracion</p>
+                            <p>Especialistas en Refrigeracion</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <img src="./img/frente.jpg" class="sobre-ns" alt="sobrenostros">
+                    <img src="./img/localmz.jpg" class="sobre-ns" alt="sobrenostros">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 colx">
                     <h1>MZ SERVICE</h1>
-                    <p class="mt-3 mb-4">Somos una empresa familiar dedicada a la reparación de electrodomésticos y ventas de repuestos para el hogar y la refrigeración tanto familiar como comercial. Contamos con un grupo de técnicos expertos para asesorarte en lo que requieras.</p>
+                    <p class="mt-3 mb-4">Somos una empresa familiar dedicada a la reparación de electrodomésticos y ventas de repuestos para el hogar y la refrigeración tanto familiar como comercial.</p>
                     <div class="d-flex pt-4 mb-3">
                         <div class="iconbox me-4">
                             <i class="ri-bank-fill"></i>
@@ -93,7 +157,7 @@
                         </div>
                         <div>
                             <h5>ATENCIÓN PERSONALIZADA</h5>
-                            <p>Trabajamos de corrido los días lunes hasta viernes en él horario de 8 a 18hs y los sábados de 8 a 13hs.</p>
+                            <p>Trabajamos de corrido los días lunes hasta viernes en él horario de 8 a 18hs y los sábados de 8 a 15hs.</p>
                         </div>
                     </div>
                     <div class="d-flex mt-3">
@@ -110,173 +174,79 @@
         </div>
     </section>
 
-    <!--SERVICIOS-->
-    <section id="services" class="section-padding border-top">
+    <!-- Sección de feeds de redes sociales -->
+    <section class="social-feeds">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">EXCELENTE SERVICIO</h1>
-                        <div class="line"></div>
-                        <p>Servicio de electrodomésticos y equipos industriales </p>
-                    </div>
+            <h1 style="text-align: center;">Nuestras Redes!</h1>
+            <p style="text-align: center;">Compartimos contenido técnico, ofertas e info sobre el repuesto. Accesorios e insumo. Te invitamos a que nos sigas para ser parte de nuestra comunidad y estar siempre informado. </p>
+            <div class="feeds-wrapper">
+                <div class="feed instagram-feed">
+                    <h3 style="color: white;">Instagram</h3>
+                    <iframe src="https://www.instagram.com/mzservice_/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-user-2-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">TECNICOS</h5>
-                    <p>CONTAMOS CON TÉCNICOS MATRICULADOS</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-tools-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">MARCAS</h5>
-                    <p>SERVICIO OFICIAL <br> MULTIMARCA</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-fridge-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">REPARACIÓN DE PLAQUETAS</h5>
-                    <p>ACONDICIONAMIENTO Y REPARACIÓN DE PLACAS DE ELECTRODOMÉSTICOS</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-temp-cold-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">CÁMARAS FRIGORÍFICAS</h5>
-                    <p>PLANEAMIENTO DE PROYECTOS DESDE CERO, MANTENIMIENTO Y REPARACIÓN</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-t-shirt-air-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">LAVARROPAS Y SECARROPAS</h5>
-                    <p>SERVICIO DE <br>REPARACIÓN Y MANTENIMIENTO</p>
-                    <a href="#" class="siza">VER MÁS</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-ram-line"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">HELADERAS</h5>
-                    <p>MANTENIMIENTO Y SERVICE DE HELADERAS COMERCIALES Y FAMILIARES</p>
-                    <a href="#" class="siza">VER MÁS</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-windy-fill"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">AIRES ACONDICIONADOS</h5>
-                    <p>INSTALACIÓN, MANTENIMIENTO Y <br>SERVICE           
-                    </p>
-                    <a href="#" class="siza">VER MÁS</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="service theme-shadow p-lg-5 p-4">
-                    <div class="iconbox">
-                        <i class="ri-sensor-fill"></i>
-                    </div>
-                    <h5 class="mt-4 mb-3">BOBINADO DE MOTORES</h5>
-                    <p>RECAMBIOS DE DISTINTAS BOBINAS Y REFACCIONES DE LAS MISMAS</p>
-                    <a href="#" class="siza">VER MÁS</a>
+                <div class="feed facebook-feed">
+                    <h3 style="color: white; text-align: center;">Facebook</h3>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61559469660065&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--MARCAS-->
-    <section class="section-header text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">INSUMOS Y REPUESTOS DE LAS SIGUIENTES MARCAS</h1>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- MARCAS -->
-        <img class="mb-4" style="width: 100%;" src="img/marcas-mz.jpg" alt="marcas.svg">
-    </section>
-
-     <!--Carr-->
-
-     <h2 class="titulo">SLIDER AUTOMATICO</h2>
-
-     <div class="slider-box">
-         <ul>
-             <li>
-                 <img src="./img/MATE.jpg" alt="">
-             </li>
-             <li>
-                 <img src="./img/MATE.jpg" alt="">
-             </li>
-             <li>
-                 <img src="./img/MATE.jpg" alt="">
-             </li>
-             <li>
-                 <img src="./img/MATE.jpg" alt="">
-             </li>
-         </ul>
-     </div>
-
-
-    <!--CARDS-->
-    <div class="container rec">
+    <!--Servicios-->
+    <div class="container rec" id="serv">
         <div class="row">
             <div class="col-12 text-center">
                 <div class="section-title">
-                    <h1 class="display-4 fw-semibold">NUESTRA FORMA DE TRABAJAR</h1>
+                    <h1 class="display-4 fw-semibold">EXCELENTE SERVICIO</h1>
+                    <p>Conocenos más</p>
             </div>
         </div>
     </div>
     <div class="container-c">
-        <div class="card" style="width: 18rem;">
+        <div class="card2">
            <div class="card-icon">
-            <i class="ri-phone-line"></i>
-            <span class="highlight">1150290328</span></div>
+            <i class="ri-whatsapp-line"></i>
+            <span class="highlight" style="color: white;">1150290328</span></div>
             <div class="card-body">
               <p class="card-text">Todos nuestros clientes tienen una atención especial, y son orientados acerca de la solución a su problema.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card2">
             <div class="card-icon">
                 <i class="ri-home-4-line"></i>
-                <span class="highlight">SERVICE A DOMICILIO </span></div>
+                <span class="highlight" style="color: white;">SERVICE A DOMICILIO </span></div>
              <div class="card-body">
                <p class="card-text">Con una previa coordinación, enviamos a un técnico de confianza a reparar el equipo en tu domicilio, de no ser posible se retira él equipo dañado. 
                 (consultar valor de visita)</p>
              </div>
          </div>
-         <div class="card" style="width: 18rem;">
+         <div class="card2">
             <div class="card-icon">
                 <i class="ri-check-line"></i>
-                <span class="highlight">GARANTÍAS</span></div>
+                <span class="highlight" style="color: white;">GARANTÍAS</span></div>
              <div class="card-body">
                <p class="card-text">Ya una vez terminado él trabajo, te entregamos un certificado de garantía por lo reparado. Para siempre brindar la mayor confiabilidad para el Cliente</p>
              </div>
          </div>
+    </div>
+
+    <!--Carrusel imagenes-->
+    <h2 class="titulo">NUESTROS TRABAJOS</h2>
+    <div class="slider-box">
+        <ul>
+            <li>
+                <img src="./img/MATE.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/MATE.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/MATE.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/MATE.jpg" alt="">
+            </li>
+        </ul>
     </div>
 
     <!-- CONTACTO -->
@@ -306,7 +276,7 @@
                 </div>
                 <div>
                     <span><i class="ri-whatsapp-line"></i></span>
-                    <a id="whatsapp-link" href="#">11-5029-0328</a>
+                    <a id="whatsapp-link" href="https://wa.link/0wsz0d" target="_blank">11-5029-0328</a>
                 </div>
                 <div>
                     <span><i class="ri-facebook-line"></i></span>
@@ -334,12 +304,12 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel" style="color: #284f90;">INFORMACIÓN DE CONTACTO</h5>
+                    <h5 class="modal-title" id="contactModalLabel" style="color: white;">INFORMACIÓN DE CONTACTO</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Horario de Atención: Lunes a Viernes de 8 a 18hs y Sábados de 8 a 13hs.</p>
-                    <p>Teléfonos: <a target="_blank" href="https://wa.link/0wsz0d" style="color: #284f90;">(11) 50290328</a></p>
-                    <p>Email: <a href="mailto:refrigeracionventas19@gmail.com" style="color: #284f90;">refrigeracionventas19@gmail.com</a></p>
+                    <p>Horario de Atención: Lunes a Viernes de 8 a 18hs y Sábados de 8 a 15hs.</p>
+                    <p>Teléfonos: <a target="_blank" href="https://wa.link/0wsz0d" style="color: white;">(11) 50290328</a></p>
+                    <p>Email: <a href="mailto:refrigeracionventas19@gmail.com" style="color: white;">refrigeracionventas19@gmail.com</a></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -352,8 +322,12 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="js/main.js"></script>
-    <script>
+
+    <!-- swiper -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <script>
         $(document).ready(function() {
             $('#contactModal').modal('show');
         });
@@ -370,6 +344,7 @@
         });
     </script>
 
+<script src="main.js"></script>
 
 </body>
 </html>

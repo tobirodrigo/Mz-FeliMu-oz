@@ -12,39 +12,15 @@
     <link rel="stylesheet" href="css/clash-display.css">
 </head>
 <body id="boddy">
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/iconMZ.png" class="logo-mz" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">¿Quienes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Contacto</a>
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-brand ms-lg-3">Arma tu kit</a>
-            </div>
-        </div>
-    </nav>
+    <!-- HEADER-->
+    <header>
+        <a href="index.html" class="logo"><i class="bx bxs-home"></i>Volver</a>
+    </header>
 
     <!--MAIN-->
     <main id="main">
-        <img style="margin-top: 100px;" src="img/qmd.jpg" alt="">
-        <div class="container">
+        <img style="margin-top: 100px;" src="img/qmd.jpg" class="img-kit" alt="">
+        <div class="container contkit">
             <label for="opciones">Selecciona la capacidad del AA:</label>
             <select class="form-control" id="opciones" name="opciones">
                 <option value="2250">-</option>
@@ -69,7 +45,7 @@
 
             <!-- AISLANTES -->
             <label>
-                <input type="checkbox" name="chkAislantes" id="chkAislantes"> Aislantes <small style="color: #008080;"> Frio/calor. Calculados segun sección y largo de caño</small>
+                <input type="checkbox" name="chkAislantes" id="chkAislantes"> Aislantes <small style="color: #000000;"> Frio/calor. Calculados segun sección y largo de caño</small>
             </label> <br>
 
             <!-- CINTA -->
@@ -119,7 +95,7 @@
                     <option value="780.00">1/2"</option>
                     <option value="960.00">5/8"</option>
                 </select><br>
-                <label for="cantManguera">Cantidad <small style="color: #008080;">Metros</small></label>
+                <label for="cantManguera">Cantidad <small style="color: #000000;">Metros</small></label>
                 <input class="form-control" type="number" name="cantManguera" id="cantManguera" value="3">
             </div><br>
 
@@ -133,7 +109,7 @@
                     <option value="2300.00">5 x 1,5mm (tipo taller)</option>
                     <option value="3052.00">5 x 2,5mm (tipo taller)</option>
                 </select><br>
-                <label for="cantCable">Cantidad <small style="color: #008080;">Metros</small></label>
+                <label for="cantCable">Cantidad <small style="color: #000000;">Metros</small></label>
                 <input class="form-control" type="number" name="cantCable" id="cantCable" value="3">
             </div><br>
 
@@ -170,9 +146,6 @@
         <div class="container">
             <div class="copyright">
                 &copy; 2024<strong> MZ Service</strong>. Todos los derechos reservados.
-            </div>
-            <div class="credits">
-                <a href="https://www.sysmam.com.ar">Contacto desarrollador</a>
             </div>
         </div>
     </footer>
